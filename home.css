@@ -1,0 +1,528 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.nav-bar {
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  color: white;
+}
+
+.container {
+  height: 60px;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.nav-items {
+  list-style: none;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.logo {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  color: #ffe600;
+}
+a {
+  text-decoration: none;
+  color: wheat;
+  position: relative;
+}
+
+.nav-item a:hover {
+  color: #ffe600;
+}
+
+#title {
+  margin: 0;
+  display: inline-block;
+}
+.fa-book-open {
+  margin-right: 10px;
+  font-size: 2rem;
+  color: wheat;
+}
+
+.hero {
+  background: url("./img/Hero.jpg") center center/cover no-repeat;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 0 1000px rgb(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.books-hero {
+  background: url("./img/Hero.jpg") center center/cover no-repeat;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 0 1000px rgb(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.hero-intro {
+  font-size: 5rem;
+  color: white;
+  margin: 0;
+}
+
+span {
+  color: #ffe600;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  color: white;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  color: white;
+}
+
+.footer-left {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-center {
+  width: 33%;
+  padding: 30px;
+}
+.footer-right {
+  width: 33%;
+  color: white;
+  padding: 40px;
+}
+
+.footer-icon {
+  color: wheat;
+}
+
+.footer-center i {
+  background-color: #33383b;
+  color: wheat;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-center div {
+  display: flex;
+}
+
+.footer-company-about {
+  width: 60%;
+}
+
+.footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.line-two {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.hero-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-btns p {
+  font-size: 3rem;
+  color: white;
+  margin-left: 30px;
+}
+.btns-wrapper {
+  display: flex;
+  align-items: center;
+}
+.hero-btn {
+  height: 30%;
+  width: 150px;
+  padding: 0.5em 1em;
+  background-color: wheat;
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  font-size: 1rem;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.hero-btn-two {
+  background-color: #ffe600;
+}
+
+.hero-btn:hover {
+  background-color: orange;
+  transition: ease-out 0.2s;
+}
+
+.books-container {
+  background-color: #eee;
+}
+
+.books-cat {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  color: wheat;
+}
+
+.books-cat-title {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  color: white;
+}
+th {
+  width: 33%;
+  text-align: start;
+}
+
+.title-container {
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  color: wheat;
+}
+
+.nav-item a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  background: #ff7000;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.nav-item a:hover::after {
+  transform: scaleX(1);
+}
+
+.book-card {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.book-card a {
+  width: 20%;
+}
+.book-img {
+  width: 100%;
+}
+
+.book-info-wrapper {
+  width: 60%;
+}
+
+.book-title {
+  color: #007185;
+  margin: 0;
+}
+
+.fa-star,
+.fa-star-half {
+  color: #ffd700;
+  margin: 5px 0;
+}
+
+.book-price {
+  margin: 5px 0;
+  color: #b12704;
+}
+
+.book-title p {
+  color: #007185;
+}
+
+.sign-container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: wheat;
+}
+.col-1 {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+}
+.col-2 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-1 img {
+  width: 100%;
+  height: 90%;
+}
+
+label {
+  color: wheat;
+}
+
+.contact-page {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.in-touch {
+  width: 100%;
+  text-transform: uppercase;
+  color: #322;
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;
+}
+
+.item {
+  margin-bottom: 24px;
+  font-size: 20px;
+  color: #322;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #322;
+  text-align: center;
+  color: wheat;
+  border-radius: 50%;
+  margin-right: 16px;
+  line-height: 3 !important;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.textb {
+  width: calc(50% - 10px);
+  height: 40px;
+  padding: 12px;
+  background-color: #222;
+  border: none;
+  color: wheat;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  resize: vertical;
+  padding: 12px;
+  background-color: #222;
+  border: none;
+  color: wheat;
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 120px;
+  height: 40px;
+  margin-left: auto;
+  background-color: #ffd700;
+  border: none;
+  color: #322;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s linear;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: orange;
+}
+
+.contact-section {
+  min-height: 100vh;
+  background: url(https://fadzrinmadu.github.io/hosted-assets/amazing-contact-page-using-html-css/bg.png)
+    no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Sign up CSS*/
+
+#registration {
+  width: 100%;
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  padding: 1em;
+  margin: 2em auto;
+}
+
+.register-title {
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1em;
+  color: wheat;
+}
+
+.col-2 p {
+  padding: 0.5em 0;
+}
+
+.col-2 p:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col-2 label {
+  display: inline-block;
+  width: 40%;
+}
+
+.col-2 input[type="text"],
+.col-2 input[type="password"],
+.col-2 textarea,
+.col-2 select {
+  border: none;
+  padding: 0.5em;
+  background-color: #ecf0f1;
+  font: inherit;
+  float: right;
+  width: 50%;
+  color: #322;
+}
+
+.col-2 textarea {
+  max-width: 50%;
+  min-width: 50%;
+}
+
+.btn-cont {
+  display: flex;
+  justify-content: center;
+}
+.register-btn {
+  height: 30%;
+  width: 150px;
+  padding: 0.5em 1em;
+  background-color: #ffd700;
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  font-size: 1rem;
+  margin: 30px auto;
+  font-weight: bold;
+}
+
+#errorMessages {
+  width: 480px;
+  margin: 2em auto;
+  background-color: wheat;
+  overflow: hidden;
+}
+
+#errorMessages li {
+  padding: 1em;
+  background-color: #e74c3c;
+  color: #ecf0f1;
+  font-weight: 400;
+  margin: 0 1em;
+  margin-bottom: 1em;
+}
+
+#errorMessages li:first-child {
+  margin-top: 1em;
+}
+
+.input-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.hero-btn a {
+  color: #000;
+}
+
+#genderF {
+  color: #ffd700;
+}
+
+.contribution-section {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: wheat;
+}
